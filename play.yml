@@ -1,5 +1,6 @@
 - name: Register a host with insights
   hosts: all
+  plugin: redhat.insights.insights
   roles:
   - role: RedHatInsights.insights-client
       vars:
