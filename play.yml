@@ -1,8 +1,8 @@
 - name: Register a host with insights
   hosts: all
-  plugin: redhat.insights.insights
+  collections: redhat.insights.insights
   roles:
-  - role: RedHatInsights.insights-client
+  - role: insights-client
       vars:
         insights_display_name: 'example_system'
     when: ansible_os_family == 'RedHat'
