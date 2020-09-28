@@ -1,8 +1,9 @@
-- name: Register a host with insights
+- name: Test the insights collection
   hosts: all
-  collections: redhat.insights.insights
-  roles:
-  - role: insights-client
-      vars:
-        insights_display_name: 'example_system'
-    when: ansible_os_family == 'RedHat'
+  collections:   # Define collections to search
+    - redhat.insights
+
+  tasks:
+    - name: Do something
+      command: ls /
+        

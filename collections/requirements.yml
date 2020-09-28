@@ -1,1 +1,4 @@
-- src: https://github.com/RedHatInsights/insights-client-role.git
+collections:
+  - name: redhat.insights
+    source: https://cloud.redhat.com/api/automation-hub/
+ 
