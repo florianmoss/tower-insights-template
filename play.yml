@@ -1,9 +1,7 @@
 - name: Register a host with insights
   hosts: all
-  collections:
-    - redhat.insights.insights
-    
-  tasks:
-    - include_role: 
-        name: insights_client
-      when: ansible_os_family == 'RedHat'
+  roles:
+  - role: RedHatInsights.insights-client
+      vars:
+        insights_display_name: 'example_system'
+    when: ansible_os_family == 'RedHat'
