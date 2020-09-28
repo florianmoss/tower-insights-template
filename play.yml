@@ -1,4 +1,4 @@
-- name: Test the insights collection
+- name: Register a host machine with Insights
   hosts: all
   collections:   # Define collections to search
     - redhat.insights
