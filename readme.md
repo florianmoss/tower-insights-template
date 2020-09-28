@@ -1,6 +1,6 @@
 # Register Cloud Host with Red Hat Insights
 
-To follow this guide, you need an active Red Hat Automation subscription, commonly known as Ansible and Ansible Tower.
+To follow this guide, you need an active Red Hat Automation subscription, commonly known as Ansible and Ansible Tower. This playbook will allow you to register existing RHEL deployments with Insights, this is especially useful for existing public cloud deployments.
 
 ### Ansible Tower Setup
 1. Go to [Red Hat Automation Hub: Insights](https://cloud.redhat.com/ansible/automation-hub/redhat/insights).
