@@ -1,4 +1,4 @@
-- name: Register a host machine with Insights
+- name: Register a subscription and a host with Insights
   hosts: all
   collections:   # Define collections to search
     - redhat.insights
