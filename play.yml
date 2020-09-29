@@ -10,7 +10,7 @@
       when: ansible_os_family == 'RedHat'
 
     - name: Register as user with password and auto-subscribe to available content.
-      redhat_subscription:
+      community.general.redhat_subscription:
         state: present
         username: "{{ redhat_portal_username }}"
         password: "{{ redhat_portal_password }}"
