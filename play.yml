@@ -2,10 +2,11 @@
   hosts: all
   collections:   # Define collections to search
     - redhat.insights
+    - community.general
 
   tasks:
     - name: Register as user with password and auto-subscribe to available content.
-      community.general.redhat_subscription:
+      redhat_subscription:
         state: present
         username: "{{ redhat_portal_username }}"
         password: "{{ redhat_portal_password }}"
