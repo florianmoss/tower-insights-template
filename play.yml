@@ -7,8 +7,8 @@
     - name: Register as user with password and auto-subscribe to available content.
       community.general.redhat_subscription:
         state: present
-        username: {{ redhat_portal_username }}
-        password: {{ redhat_portal_password }}
+        username: "{{ redhat_portal_username }}"
+        password: "{{ redhat_portal_password }}"
         auto_attach: true
 
     - include_role: 
