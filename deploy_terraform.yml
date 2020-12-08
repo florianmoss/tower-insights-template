@@ -15,7 +15,7 @@
 
     - name: Copy over the right inventory file
       template:
-        src: /terraform/main.tf.j2
+        src: terraform/main.tf.j2
         dest: /tmp/terra-script/main.tf
 
     - name: Basic deploy of a service
