@@ -4,14 +4,15 @@
   remote_user: ec2-user
   collections:   # Define collections to search
     - redhatinsights.insights
+    - community.general.redhat_subscription
 
   tasks:
-  
     - name: Register as user with password for RHN
       community.general.redhat_subscription:
         state: present
         username: "{{ redhat_portal_username }}"
         password: "{{ redhat_portal_password }}"
+    
     - include_role: 
         name: insights_client
       when: ansible_os_family == 'RedHat'
