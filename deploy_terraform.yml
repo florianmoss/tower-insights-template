@@ -22,3 +22,4 @@
       community.general.terraform:
         project_path: /tmp/terra-script
         state: present
+        binary_path: /usr/local/bin/terraform
