@@ -19,6 +19,7 @@
         dest: /tmp/terra-script/main.tf
 
     - command: sudp pip3 install awscli
+      ignore_errors: yes
 
     - command: terraform init
       args:
