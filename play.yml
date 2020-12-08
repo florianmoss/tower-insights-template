@@ -10,8 +10,8 @@
     - name: Register as user with password for RHN
       community.general.redhat_subscription:
         state: present
-        username: "{{ lookup("env", "redhat_portal_username") }}"
-        password: "{{ lookup("env", "redhat_portal_password") }}"
+        username: "{{ lookup('env', 'redhat_portal_username') }}"
+        password: "{{ lookup('env', 'redhat_portal_password') }}"
     
     - include_role: 
         name: insights_client
