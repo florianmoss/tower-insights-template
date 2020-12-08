@@ -4,7 +4,7 @@
   remote_user: ec2-user
   collections:   # Define collections to search
     - redhatinsights.insights
-    - community.general.redhat_subscription
+    - community.general
 
   tasks:
     - name: Register as user with password for RHN
