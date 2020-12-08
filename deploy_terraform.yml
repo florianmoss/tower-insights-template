@@ -18,15 +18,12 @@
         src: terraform/main.tf.j2
         dest: /tmp/terra-script/main.tf
 
-    - command: sudp pip3 install awscli
+    - command: sudo pip3 install awscli
       ignore_errors: yes
-
-    - command: terraform init
-      args:
-        chdir: /tmp/terra-script
 
     - name: Basic deploy of a service
       community.general.terraform:
         project_path: /tmp/terra-script
         state: present
         binary_path: /usr/local/bin/terraform
+        force_init: yes
