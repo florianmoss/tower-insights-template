@@ -1,7 +1,9 @@
 - name: Register a subscription and a host with Insights
   hosts: all
+  become: yes
+  remote_user: ec2-user
   collections:   # Define collections to search
-    - redhat.insights
+    - redhatinsights.insights
 
   tasks:
     - include_role: 
