@@ -1,3 +1,4 @@
 collections:
   - name: redhatinsights.insights
+  - name: community.general.redhat_subscription
 
