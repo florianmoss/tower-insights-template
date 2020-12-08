@@ -1,0 +1,13 @@
+provider "aws" {
+  region = "eu-west-1"
+}
+
+resource "aws_instance" "machine1_instance" {
+  ami           = "ami-032e5b6af8a711f30"
+  instance_type = "{ machine_size }}"
+  key_name = "insights-demo"
+  tags = {
+    Name = "from-tower-rhel-8-x86",
+    Group = "insights-demo"
+  }
+}
